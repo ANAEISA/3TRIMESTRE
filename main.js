@@ -39,9 +39,10 @@ const listaDeTeclas = document.querySelectorAll('tecla');
 listaDeTeclas[contador].onclick = tocaSomPom;
 
 let contador = 0;
-while (contador < listaDeTeclas.length) {
-    
+while (contador <9) {
+    listaDeTeclas[0].onclick = tocaSomPom;
     contador = contador + 1;
 
-    }
+    console.log(contador);
+}
 // Estrutura de repetição - Enquanto
