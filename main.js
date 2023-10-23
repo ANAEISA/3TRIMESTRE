@@ -8,6 +8,10 @@ const listaDeTeclas=document.querySelectorAll('.tecla');
    const instrumento = tecla.classList[1];
    const idAudio = `#som_ ${instrumento}`;
    tecla.onclick = function(){
+      tecla.classList.add('ativa');
       tocaSom(idAudio);
     };
+    tecla.onkeydown = function() {
+      tecla.classList.add('ativa');
+    }
  }
