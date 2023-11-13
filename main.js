@@ -1,7 +1,7 @@
    //a função que deve ser executadaé tocaSom, mas que som? Nesse caso,
    //será o parâmetro idElementoAudio. Ou seja, o endereço da tecla será
    //procurado no html e reproduzido.
-      function tocaSom(idElementoAudio){
+   function tocaSom(idElementoAudio){
    const elemento = document.querySelector(idElementoAudio);
    //se o elemento pesquisado for igual a "inexistente", o alerta de
    //elemento não encontrado aparecerá.
@@ -45,7 +45,7 @@
       };
       //onkeyup significa "quando a tecla estiver erguida, não pressionada",
       //nesse caso, a função será removida.
-    tecla.onkeydown = function() {
+    tecla.onkeyup = function() {
       tecla.classList.remove('ativa');
      };
     console.log(instrumento);
